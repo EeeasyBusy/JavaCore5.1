@@ -48,7 +48,7 @@ public class Main {
 
     }
 
-    private static List<Employee> parseXML(String fileName) throws IOException, SAXException, ParserConfigurationException {
+    public static List<Employee> parseXML(String fileName) throws IOException, SAXException, ParserConfigurationException {
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         DocumentBuilder builder = factory.newDocumentBuilder();
         Document doc = builder.parse(new File(fileName));
